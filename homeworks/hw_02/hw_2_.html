@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
+<script>
+    /*  - Створити масив, наповнити його 10 елементами будь-якого типу, вивести
+    кожен елемент в консоль*/
+    let array = [
+        'floor0',
+        'floor1',
+        'floor2',
+        'floor3',
+        'floor4',
+        'floor5',
+        'floor6',
+        'floor7',
+        'floor8',
+        'floor9',
+    ]
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+
+
+</script>
+
+<script>
+    /*    - Створити 3 об'єкти які описують книги.
+    Поля об'єкту : title ,pageCount, genre, authors.
+    Поле "автори" - являється  масивом. Кожен автор має поля name та age.*/
+
+    let book = ['title', 'pageCount', 'genre', {author: ['name', 'age']}];
+
+</script>
+
+<script>
+    /*- Створити масив з 10 об'єктами які описують сутніть "користувач".
+    Поля: name, username,password.
+    Вивести в консоль пароль кожного користувача*/
+
+    let user = [
+        ['name', 'username', 'password1'],
+        ['name', 'username', 'password2'],
+        ['name', 'username', 'password3'],
+        ['name', 'username', 'password4'],
+        ['name', 'username', 'password5'],
+        ['name', 'username', 'password6'],
+        ['name', 'username', 'password7'],
+        ['name', 'username', 'password8'],
+        ['name', 'username', 'password9'],
+        ['name', 'username', 'password10']
+    ]
+    for (let i = 0; i < user.length; i++) {
+        const userElement = user[i][2];
+        console.log(userElement)
+    }
+</script>
+
+<script>
+    /*- описати масив, в якому буде зберігатись інформація про температуру
+    вранці, вдень і ввечері за термін в 7 днів. Як зробити цей масив - вам
+    потрібно подумати. Нормальних варіантів опису - 2. Варіант, коли в вас
+    буде одновимірний масив з 21 значенням вичключаємо одразу*/
+
+    let temperature = [
+
+    ]
+</script>
 
 </body>
 </html>
