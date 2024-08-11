@@ -65,17 +65,54 @@
     потрібно подумати. Нормальних варіантів опису - 2. Варіант, коли в вас
     буде одновимірний масив з 21 значенням вичключаємо одразу*/
 
+
     let temperature = [
-        {Monday: ['18', '28', '22']},
-        {Tuesday: ['18', '28', '22']},
-        {Wednesday: ['18', '28', '22']},
-        {Thursday: ['18', '28', '22']},
-        {Friday: ['18', '28', '22']},
-        {Saturday: ['18', '28', '22']},
-        {Sunday: ['18', '28', '22']}
+            Monday = [18, 28, 22],
+            Tuesday = [18, 28, 22],
+            Wednesday = [18, 28, 22],
+            Thursday = [18, 28, 22],
+            Friday = [18, 28, 22],
+            Saturday = [18, 28, 22],
+            Sunday = [18, 28, 22],
     ]
-    console.log(temperature)
+    console.log(temperature[1]);
+
+    for (let i = 0; i < temperature.length; i++) {
+    let weekday = 'unknown day';
+        /*switch (weekday){
+            case i === 0: weekday = "Monday"; break;
+            case i === 1: weekday = "Tuesday"; break;
+            case i === 2: weekday = "Wednesday"; break;
+            case i === 3: weekday = "Thursday"; break;
+            case i === 4: weekday = "Friday"; break;
+            case i === 5: weekday = "Saturday"; break;
+            case i === 6: weekday = "Sunday"; break;}   does not work, why ??? */
+        if(i === 0){weekday = "Monday"}
+        else if (i === 1){weekday = "Tuesday"}
+        else if (i === 2){weekday = "Wednesday"}
+        else if (i === 3){weekday = "Thursday"}
+        else if (i === 4){weekday = "Friday"}
+        else if (i === 5){weekday = "Saturday"}
+        else if (i === 6){weekday = "Sunday"}
+            console.log("On " + weekday + " in the morning t = " + temperature[i][0]);
+            console.log("On " + weekday + " in the midday t = " + temperature[i][1]);
+            console.log("On " + weekday + " in the evening t = " + temperature[i][2])
+
+    }
+
 </script>
+
+<script>
+    /*- Є змінна х, якій ви надаєте довільне числове значення.
+    Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'.
+    Перевірте  скрипт при a, що дорівнює 1, 0, -3*/
+
+    let x = !!!0;
+    console.log(x)
+    let a = 1;
+
+</script>
+
 
 </body>
 </html>
