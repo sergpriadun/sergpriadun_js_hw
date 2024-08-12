@@ -5,9 +5,10 @@
     <title>Title</title>
 </head>
 <body>
+
+<!--/*  - Створити масив, наповнити його 10 елементами будь-якого типу, вивести
+кожен елемент в консоль*/-->
 <script>
-    /*  - Створити масив, наповнити його 10 елементами будь-якого типу, вивести
-    кожен елемент в консоль*/
     let array = [
         'floor0',
         'floor1',
@@ -27,19 +28,19 @@
 
 </script>
 
+<!--/*    - Створити 3 об'єкти які описують книги.
+Поля об'єкту : title ,pageCount, genre, authors.
+Поле "автори" - являється  масивом. Кожен автор має поля name та age.*/-->
 <script>
-    /*    - Створити 3 об'єкти які описують книги.
-    Поля об'єкту : title ,pageCount, genre, authors.
-    Поле "автори" - являється  масивом. Кожен автор має поля name та age.*/
 
     let book = ['title', 'pageCount', 'genre', {author: ['name', 'age']}];
 
 </script>
 
+<!--/*- Створити масив з 10 об'єктами які описують сутніть "користувач".
+Поля: name, username,password.
+Вивести в консоль пароль кожного користувача*/-->
 <script>
-    /*- Створити масив з 10 об'єктами які описують сутніть "користувач".
-    Поля: name, username,password.
-    Вивести в консоль пароль кожного користувача*/
 
     let user = [
         ['name', 'username', 'password1'],
@@ -59,11 +60,11 @@
     }
 </script>
 
+<!--/*- описати масив, в якому буде зберігатись інформація про температуру
+вранці, вдень і ввечері за термін в 7 днів. Як зробити цей масив - вам
+потрібно подумати. Нормальних варіантів опису - 2. Варіант, коли в вас
+буде одновимірний масив з 21 значенням вичключаємо одразу*/-->
 <script>
-    /*- описати масив, в якому буде зберігатись інформація про температуру
-    вранці, вдень і ввечері за термін в 7 днів. Як зробити цей масив - вам
-    потрібно подумати. Нормальних варіантів опису - 2. Варіант, коли в вас
-    буде одновимірний масив з 21 значенням вичключаємо одразу*/
 
 
     let temperature = [
@@ -102,10 +103,10 @@
 
 </script>
 
+<!--/*- Є змінна х, якій ви надаєте довільне числове значення.
+Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'.
+Перевірте  скрипт при a, що дорівнює 1, 0, -3*/-->
 <script>
-    /*- Є змінна х, якій ви надаєте довільне числове значення.
-    Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'.
-    Перевірте  скрипт при a, що дорівнює 1, 0, -3*/
 
     let x = 8;
     a = !!x;
@@ -113,6 +114,78 @@
 
 </script>
 
+<!--/*- Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої
+четверті години попадає число*/-->
+<script>
+    let time = 45.01;
+    if (time <= 15.00){console.log("The FIRST quarter is now")}
+    if (time > 15.00 && time <= 30.00){console.log("The SECOND quarter is now")}
+    if (time > 30.00 && time <= 45.00){console.log("The THIRD quarter is now")}
+    if (time > 45.00){console.log("The FOURTH quarter is now")}
+</script>
+
+<!--/*- У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця
+потрапляє це число (у першу, другу чи третю).*/-->
+<script>
+
+    let data = 0;
+    let first_decade = 10;
+    let sec_decade = 20;
+    let third_decade = 31;
+    if(data <= first_decade) console.log("The decade is the FIRST")
+    if(data > first_decade && data <= sec_decade) console.log("The decade is the SECOND")
+    if(data > sec_decade && data <= first_decade) console.log("The decade is the THIRD")
+
+</script>
+
+<!--/*- Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і
+на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня
+англійською).*/-->
+<script>
+
+    let day = 'Sunday';
+    switch (day){
+        case 'Monday': console.log("Monday: wakeup: 6.00", "asleep 23.00"); break;
+        case 'Tuesday': console.log("Tuesday: wakeup: 6.00", "asleep 23.00"); break;
+        case 'Wednesday': console.log("Wednesday: wakeup: 6.00", "asleep 23.00"); break;
+        case 'Thursday': console.log("Thursday: wakeup: 6.00", "asleep 23.00"); break;
+        case 'Friday': console.log("Friday: wakeup: 6.00", "asleep 23.00"); break;
+        case 'Saturday': console.log("Saturday: wakeup: 7.00", "asleep 23.00"); break;
+        case 'Sunday': console.log("Sunday: wakeup: 7.00", "asleep 23.00"); break;
+
+    }
+
+</script>
+
+<!-- - Користувач вводить або має два числа. Потрібно знайти та вивести максимальне число з тих двох .
+Також потрібно врахувати коли введені рівні числа.-->
+<script>
+    let digit_1 = 49;
+    let digit_2 = 50;
+    let max_digit = digit_1;
+    if(digit_2>=digit_1){
+        max_digit = digit_2
+    }
+    console.log("Max digit = " + max_digit)
+
+
+</script>
+
+<!-- - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно).
+Напишіть код який, буде присвоювати змінній х значення "default"  якщо ви намагаєтесь присвоїти в неї falsy-значення
+(хибноподібні, тобто ті, які приводиться до false, а це 0 null undefined і тд).-->
+<script>
+    let variable = null;
+    if(!!variable === false){
+        variable = "default"
+    }
+    console.log(variable)
+</script>
+
+<!-- - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги
+іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5
+місяців вивести в консоль "Супер".-->
+I did not find the array neither folder 2023 plan no array coursesAndDurationArray in OktenSchool/js_demos
 
 </body>
 </html>
